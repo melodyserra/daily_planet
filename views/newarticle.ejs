@@ -1,0 +1,19 @@
+<% include partials/header %>
+
+  <form action="/articles" method="POST">
+    <h2>
+      <label for="article_title">Article Title</label>
+    </h2>
+    <p>
+      <input type="text" name="article[title]" id="article_title" placeholder="give your article a title">
+    </p>
+    <h2>
+      <label for="article_body">Article Content:</label>
+    </h2>
+    <p>
+      <textarea name="article[body]" id="article_body"placeholder="type a few sentences to summarize your article"></textarea>
+    </p>
+    <p>
+      <input type="submit" value="Save Article">
+    </p>
+<% include partials/footer %>

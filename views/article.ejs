@@ -1,0 +1,12 @@
+<% include partials/header %>
+
+<% if(typeof article === 'undefined'){ %>
+  <h3>No article by that ID...please go <a href="/">home</a></h3>
+<% } else {%>
+    <article>
+      <h2> <%= article.title %> </h2>
+      <p> <%= article.body %> </p>
+    </article>
+<% }%>
+<a href="/articles">See all articles</a>
+<% include partials/footer %>
