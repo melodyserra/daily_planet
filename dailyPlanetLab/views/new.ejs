@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Post New Article</title>
+</head>
+<body>
+  <form action="/articles" method="POST">
+    <h2>
+      <label for="article_title">Article Title</label>
+    </h2>
+    <p>
+      <input type="text" name="article[title]" id="article_title" placeholder="article title">
+    </p>
+    <h2>
+      <label for="article_body">Article Content:</label>
+    </h2>
+    <p>
+      <textarea name="article[body]" id="article_body"placeholder="summarize your article"></textarea>
+    </p>
+    <p>
+      <input type="submit" value="Save Article">
+    </p>
+	
+</body>
+</html>

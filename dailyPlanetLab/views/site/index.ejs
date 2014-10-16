@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Homepage</title>
+</head>
+<body>
+	<% if(articles.length == 0) { %>
+	      </div>
+          <div class="navbar" style="height: 1px;">
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li class="active"><a href="/articles">Articles</a></li>
+              <li><a href="/about">About Us</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+         </div>
+    <div>
+    <% } else { %>
+    <p>
+     <% articles.forEach(function(article){ %> 
+      	<span><a href="/articles/<%=article.id%>">Article: <%= article.id%></a></span>
+      	<br>
+      	<article><%= article.articlename %></article>
+      	<br>
+  	 	<% }); %>
+
+ <% } %>
+    </div>
+
+</body>
+</html>

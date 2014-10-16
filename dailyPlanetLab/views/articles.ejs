@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+  <div id="new_article">
+    <a href="/articles/new">Click here to add a new article!</a>
+  </div>
+
+  <% articles.forEach(function(article) { %>
+
+      <h2><%= article.title %></h2>
+      <p>
+        <%= article.body %>... <a href="articles/<%=article.id %>">READ MORE</a>
+        <p>
+          <%= article.id%>
+        </p>
+      </p>
+  <% }) %>
+</body>
+</html>
+
